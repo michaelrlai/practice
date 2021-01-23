@@ -1,0 +1,75 @@
+
+@viewport {
+    zoom: 1.0;
+    width: extent-to-zoom;
+}
+
+@-ms-viewport {
+    zoom: 1.0;
+    width: extent-to-zoom;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+a:link,
+a:visited {
+    text-decoration: none;
+    outline: none;
+}
+
+/* ------------ */
+
+body {
+    font-family: sans-serif;
+}
+
+.modal {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10;
+}
+
+.modal-content {
+    width: 70%;
+    height: 50%;
+    background-color: white;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2em;
+}
+
+.modal-close {
+    color: grey;
+    position: absolute;
+    top: 1em;
+    right: 1em;
+}
+
+.modal-heading {
+    color: dodgerblue;
+    margin-bottom: 0.5em;
+}
+
+.modal-description {
+    line-height: 1.5em;
+}
